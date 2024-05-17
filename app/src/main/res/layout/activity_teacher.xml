@@ -1,0 +1,68 @@
+<!-- res/layout/activity_teacher.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp">
+
+
+   <RelativeLayout
+   android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Добавляем кнопку для личного кабинета -->
+    <Button
+        android:id="@+id/btnCabinet"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+       android:background="@drawable/rounded_button"
+        android:text="Личный кабинет" />
+
+    <!-- Добавляем кнопку для создания теста -->
+    <Button
+        android:id="@+id/btnCreateTest"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/btnCabinet"
+        android:layout_marginTop="16dp"
+        android:text="Создать тест"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnCreateSubject"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/btnCreateTest"
+        android:layout_marginTop="16dp"
+        android:text="Создать предмет"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/btnStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/btnCreateSubject"
+        android:layout_marginTop="16dp"
+        android:text="Статистика"
+        android:onClick="openStatisticsActivity"/>
+
+    <!-- Добавляем кнопку выхода из системы -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/rounded_button"
+        android:layout_below="@id/btnStatistics"
+        android:layout_marginTop="16dp"
+        android:text="Выйти" />
+
+    <!-- Другие элементы макета, если необходимо -->
+
+</RelativeLayout>
+</RelativeLayout>

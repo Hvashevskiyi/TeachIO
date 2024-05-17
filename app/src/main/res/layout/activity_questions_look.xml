@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsLookActivity"
+    android:gravity="center">
+
+    <!-- Основной контент активности -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="">
+
+        <!-- TextView для отображения текста вопроса -->
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Текст вопроса здесь"
+            android:textSize="18sp" />
+
+        <!-- EditText для ввода ответа пользователя -->
+        <EditText
+            android:id="@+id/editTextAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Введите ответ"
+            android:inputType="text" />
+
+        <!-- Кнопка для отправки ответа -->
+        <Button
+
+            android:id="@+id/buttonSubmitAnswer"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_button"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Отправить ответ" />
+
+    </LinearLayout>
+</RelativeLayout>

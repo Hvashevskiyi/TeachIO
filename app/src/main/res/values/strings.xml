@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ИИС Учёба</string>
+
+    <string-array name="user_types">
+        <item>Тип пользователя</item>
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+    <string name="question_number_title">Вопрос №%1$d</string>
+
+    <string name="select_lesson_type_prompt">Select Lesson Type</string>
+    <string name="your_prompt_string_resource">Select subject</string>
+    <string name="lesson_type_prompt">Select Lesson Type</string>
+
+
+</resources>

@@ -1,0 +1,62 @@
+<!-- res/layout/activity_test.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Выбор типа урока -->
+    <TextView
+        android:id="@+id/textViewSelectedLessonType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Выбранный тип предмета: ..."
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- ListView для отображения LessonType -->
+    <ListView
+        android:id="@+id/listViewLessonType"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewSelectedLessonType"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Выбор предмета для выбранного типа урока -->
+    <TextView
+        android:id="@+id/textViewSelectedSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Выбранный предмет: ..."
+        android:textAlignment="viewStart"
+        android:layout_below="@id/listViewLessonType"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- ListView для отображения Subject -->
+    <ListView
+        android:id="@+id/listViewSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewSelectedSubject"
+        android:layout_marginTop="16dp" />
+
+    <!-- Кнопка для начала прохождения теста -->
+    <Button
+        android:id="@+id/btnStartTest"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Начать тест" />
+
+</RelativeLayout>

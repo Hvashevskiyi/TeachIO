@@ -1,0 +1,47 @@
+<!-- activity_create_subject.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".CreateSubjectActivity">
+
+    <EditText
+        android:id="@+id/editTextSubjectName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название предмета"/>
+
+    <Spinner
+        android:id="@+id/spinnerLessonType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/lesson_type_prompt"></Spinner>
+    <!-- CheckBox for choosing open or closed lesson -->
+    <CheckBox
+        android:id="@+id/checkBoxOpenSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Открытый предмет" />
+
+    <!-- EditText for entering the password -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Создайте пароль"
+        android:visibility="visible"/> <!-- Initially set to gone -->
+
+    <!-- Add other UI components as needed -->
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="Save"/>
+
+</LinearLayout>

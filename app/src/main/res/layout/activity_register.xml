@@ -1,0 +1,99 @@
+<!-- res/layout/activity_register.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+
+
+    <!-- Другие элементы макета, если необходимо -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <EditText
+        android:id="@+id/editTextLoginRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Логин" />
+
+    <TextView
+        android:id="@+id/textViewLoginError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLoginRegistration"
+        android:layout_marginTop="4dp"
+
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTextNameRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLoginError"
+        android:layout_marginTop="16dp"
+
+        android:hint="Имя" />
+
+        <EditText
+            android:id="@+id/editTextEmailRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_below="@id/editTextNameRegistration"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewEmailError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmailRegistration"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinnerUserType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmailRegistration"
+        android:layout_marginTop="16dp"
+        android:hint="Тип пользователя"
+        android:entries="@array/user_types" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerUserType"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="Пароль" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPasswordRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPasswordRegistration"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="Подтвердите пароль" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextConfirmPasswordRegistration"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:text="Зарегистрироваться" />
+
+    <!-- Другие элементы макета, если необходимо -->
+</RelativeLayout>
+
+</RelativeLayout>

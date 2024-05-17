@@ -1,0 +1,77 @@
+<!-- res/layout/activity_teacher.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Добавляем кнопку для личного кабинета -->
+        <Button
+            android:id="@+id/btnCabinet"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button"
+            android:text="Личный кабинет" />
+
+        <!-- Добавляем кнопку для прохождения теста -->
+        <Button
+            android:id="@+id/btnTakeTest"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/btnCabinet"
+            android:layout_marginTop="16dp"
+            android:text="Пройти тест"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/btnTakeTest"
+            android:layout_marginTop="16dp"
+            android:text="Найти тест по ID" />
+
+        <!-- Добавляем кнопку для просмотра результатов -->
+        <Button
+            android:id="@+id/btnExportResult"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/btnSearch"
+            android:layout_marginTop="16dp"
+            android:text="Экспорт результатов" />
+
+        <Button
+            android:id="@+id/btnViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@+id/btnExportResult"
+            android:layout_marginTop="16dp"
+            android:text="Просмотр результатов" />
+
+        <!-- Добавляем кнопку выхода из системы -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@drawable/rounded_button"
+            android:layout_below="@id/btnViewResults"
+            android:layout_marginTop="16dp"
+            android:text="Выйти" />
+
+        <!-- Другие элементы макета, если необходимо -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

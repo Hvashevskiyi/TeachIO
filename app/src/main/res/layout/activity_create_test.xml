@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Spinner для выбора типа урока (LessonType) -->
+    <Spinner
+        android:id="@+id/spinnerLessonType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        android:prompt="@string/select_lesson_type_prompt" />
+
+    <!-- Spinner для выбора существующего предмета -->
+    <Spinner
+        android:id="@+id/spinnerExistingSubjects"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerLessonType"
+        android:layout_marginTop="16dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/editTextTestName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите название теста"
+        android:layout_below="@+id/spinnerExistingSubjects"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/btnSaveTest"
+        android:layout_width="match_parent"
+        android:background="@drawable/rounded_button"
+        android:layout_height="wrap_content"
+        android:text="Сохранить тест"
+        android:layout_below="@id/editTextTestName"
+        android:layout_marginTop="16dp"
+        />
+    <!-- ... (ваш существующий код) -->
+
+
+</RelativeLayout>

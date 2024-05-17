@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+   >
+
+    <TextView
+        android:id="@+id/textViewSubjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:text="Название предмета: "
+
+        />
+
+    <TextView
+        android:id="@+id/textViewTeacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSubjectName"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Имя учителя: "
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewLessonType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTeacherName"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+
+        android:text="Тип урока: "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewShowPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLessonType"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Введите пароль:"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text=""
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/textViewShowPass"/>
+
+    <LinearLayout
+        android:id="@+id/passwordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/editTextPassword"
+        >
+
+        <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+            android:background="@drawable/rounded_button"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        android:text="Назад" />
+
+        <Button
+            android:id="@+id/buttonChooseTest"
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_button"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Выбрать тест" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewTests"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@id/passwordLayout"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/textViewSelectedTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listViewTests"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+
+    <!-- Кнопка "Запустить тест" -->
+    <Button
+        android:id="@+id/buttonStartTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSelectedTest"
+
+        android:background="@drawable/rounded_button"
+        android:layout_marginTop="16dp"
+        android:text="Запустить тест"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>
